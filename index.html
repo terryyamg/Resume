@@ -111,9 +111,9 @@
             </tr>
             <tr>
             	<td><strong class="text-info">期望職位：</strong></td>
-            	<td class="col-md-3">Android 工程師(年資:2年)</td>
+            	<td class="col-md-3">Android iOS工程師(年資:Android 2年,iOS 1年)</td>
             	<td><strong class="text-info">期望薪資：</strong></td>
-            	<td class="col-md-3">月薪42k~50k</td>
+            	<td class="col-md-3">月薪48k~50k</td>
             	<td><strong class="text-info">期望城市：</strong></td>
             	<td class="col-md-3">高雄市</td>
             </tr>
@@ -171,7 +171,7 @@
                     document.write(year+"年"+month+"月");
                     </script>）</h3>
 
-        		<h5>在這裡，我獨立幫助公司開發5個App，因為開發App，擴展了公司更多客戶，也成功讓App給既有或新開發的客戶使用，同一個App重複賣給不同公司，賣出的App幫助公司賺了數百萬以上。</h5>
+        		<h5>在這裡，我獨立幫助公司開發5個Android App,1個iOS App，因為開發App，擴展了公司更多客戶，也成功讓App給既有或新開發的客戶使用，同一個App重複賣給不同公司，賣出的App幫助公司賺了數百萬以上。</h5>
   				<blockquote><strong>盤點 App</strong>
   					<h5>當倉庫物品不見時，藉由盤點可以找出物品不見的原因，使用感應裝置（NFC，QRcode）感應物品，可進行借出、收回與盤點功能，紀錄並計算數量，完成後，回傳至後端資料庫。</h5>
   					<li><h5>後端 - 由主管帶領從需求分析到後端資料庫與網頁製作，使用MYSQL做為後端資料庫，UI使用<code><a href="http://dhtmlx.com/" target="_blank">dhtmlx</a></code>，搭配PHP與Javascript製作。</h5></li>
@@ -187,8 +187,9 @@
   				<blockquote><strong>巡查 App</strong>
   					<h5>公司主產品，兩種類似性質的App，但專業用途不一樣，目的在於工地檢查異常紀錄，由手機端拍照並紀錄異常狀態，記錄完成後回傳至後端處理。</h5>
   					<li><h5>後端 - 由後端人員製作。</h5></li>
-  					<li><h5>App - 開發IDE為Android Studio，使用登入、拍照、推撥、GPS定位、NFC感應、QRcode掃描、Google Map 應用，資料傳輸使用檔案格式、json格式上下傳。</h5></li>
-  					<li><h5>目前成功於委託公司使用中。</h5></li>
+  					<li><h5>App(Android) - 開發IDE為Android Studio，使用登入、拍照、推撥、GPS定位、NFC感應、QRcode掃描、Google Map 應用，資料傳輸使用檔案格式、json格式上下傳，後續使用MVP架構部分重構。</h5></li>
+  					<li><h5>App(iOS) - 開發IDE為XCode，使用Swift 2.2語法開發，使用MVC架構，功能與Android相似。(尚未上架)</h5></li>
+  					<li><h5>目前Android App成功於委託公司使用中。</h5></li>
   					<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=com.httc.pipeline" target="_blank">網址1</a> <a href="https://play.google.com/store/apps/details?id=com.httc.audit" target="_blank">網址2</a></h5></li>
   				</blockquote>
   				<blockquote><strong>商用 App</strong>
@@ -237,7 +238,19 @@
                     <div id="80-progress" style="background:#685178;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
                 </td> -->
                 <td>
-                    <div id="80-score">0</div>
+                    <div class="80-score">0</div>
+                </td>
+                <td>目前主要工作</td>
+            </tr>
+            <tr>
+                <td>Swift</td>
+                <td><img alt="Swift" src="img/swift.png"></img>
+                </td>
+                <!-- <td class="col-md-3">
+                    <div class="40-progress" style="background:#EC7B34;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
+                </td> -->
+                <td>
+                    <div class="80-score">0</div>
                 </td>
                 <td>目前主要工作</td>
             </tr>
@@ -252,18 +265,6 @@
                     <div id="60-score">0</div>
                 </td>
                 <td>工作需要支援時</td>
-            </tr>
-            <tr>
-                <td>Swift</td>
-                <td><img alt="Swift" src="img/swift.png"></img>
-                </td>
-                <!-- <td class="col-md-3">
-                    <div class="40-progress" style="background:#EC7B34;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
-                </td> -->
-                <td>
-                    <div class="40-score">0</div>
-                </td>
-                <td>自己練習</td>
             </tr>
             <tr>
                 <td>Javascript</td>
@@ -304,10 +305,10 @@
         </table>
     </div>
     <script>
-    $("#80-progress").animate({
+    $(".80-progress").animate({
         width: '300px'
     }, 2000, 'easeOutCubic');
-    $('#80-score').animateNumbers(80, true, 1000);
+    $('.80-score').animateNumbers(80, true, 1000);
     $("#60-progress").animate({
         width: '200px'
     }, 2000, 'easeOutCubic');
