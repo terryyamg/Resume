@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/jquery.animateNumbers.js"></script>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet" type="text/css" />
     <!-- HTML5 shim and Respond.js 讓 IE8 支援 HTML5 元素與媒體查詢 -->
     <!-- 警告：Respond.js 無法在 file:// 協定下運作 -->
@@ -20,12 +20,12 @@
     <![endif]-->
 </head>
 
-<body>
+<body id="body">
     <script src="js/bootstrap.min.js"></script>
     <div class="page-header">
         <div id="head">
             <h1>履歷 
-  				<small>楊鎮齊</small>
+  				<small>Terry yang</small>
   			</h1>
         </div>
     </div>
@@ -73,16 +73,8 @@
                 <td class="col-md-3">男</td>
             </tr>
             <tr>
-                <td><strong class="text-info">戶籍：</strong></td>
-                <td class="col-md-3">高雄市</td>
-                <td><strong class="text-info">婚姻狀態：</strong></td>
-                <td class="col-md-3">未婚</td>
-                <td><strong class="text-info"></strong></td>
-                <td class="col-md-3"></td>
-            </tr>
-            <tr>
-                <td><strong class="text-info">兵役：</strong></td>
-                <td class="col-md-3">海軍艦艇兵(馬祖)2009年9月(役畢)</td>
+                <td><strong class="text-info">哪裡人：</strong></td>
+                <td class="col-md-3">高雄人</td>
                 <td><strong class="text-info">E-mail：</strong></td>
                 <td class="col-md-3"><a href="mailto:terryyamg@gmail.com">terryyamg@gmail.com</a>
                     <button type="button" class="btn btn-primary btn-xs" id="copy">Copy</button>
@@ -90,9 +82,6 @@
                     function copyToClipboard(text) {
                         window.prompt("複製至剪貼簿: Ctrl+C, Enter", text);
                     }
-
-                    // Use JQuery
-                    //
                     $('#copy').click(function() {
                         copyToClipboard("terryyamg@gmail.com")
                     });
@@ -102,8 +91,11 @@
                 <td class="col-md-3">普通重型機車</td>
             </tr>
             <tr>
+                
+            </tr>
+            <tr>
                 <td><strong class="text-info">職稱：</strong></td>
-                <td class="col-md-3">高級工程師</td>
+                <td class="col-md-3">Sr. Android/iOS Developer</td>
                 <td><strong class="text-info">技術部落格：</strong> </td>
                 <td class="col-md-3"><a href="http://terryyamg.blogspot.tw/" target="_blank">http://terryyamg.blogspot.tw/</a></td>
                 <td><strong class="text-info">GitHub：</strong> </td>
@@ -111,9 +103,9 @@
             </tr>
             <tr>
             	<td><strong class="text-info">期望職位：</strong></td>
-            	<td class="col-md-3">Android iOS工程師(年資:Android 2.5年,iOS 1年)</td>
+            	<td class="col-md-3">Android iOS工程師(年資:Android 2.5年,iOS 2年)</td>
             	<td><strong class="text-info">期望薪資：</strong></td>
-            	<td class="col-md-3">年薪70萬 ↑</td>
+            	<td class="col-md-3"><p class="text-danger">年薪80萬 ↑</p></td>
             	<td><strong class="text-info">期望城市：</strong></td>
             	<td class="col-md-3">高雄市</td>
             </tr>
@@ -121,219 +113,228 @@
     </div>
     <!-- 學歷 -->
     <div class="panel panel-primary">
-        <div class="panel-heading">學歷</div>
+        <div class="panel-heading" data-toggle="collapse" href="#collapse_education">學歷</div>
         <!-- Table -->
-        <table class="table">
-            <tr>
-                <td><strong class="text-info">學歷</strong></td>
-                <td><strong class="text-info">學校</strong></td>
-                <td><strong class="text-info">科系</strong></td>
-                <td><strong class="text-info">畢業年</strong></td>
-            </tr>
-            <tr>
-                <td>碩士</td>
-                <td>高雄市中山大學</td>
-                <td>電機工程(自動控制組)</td>
-                <td>2013年9月</td>
-            </tr>
-            <tr>
-                <td>學士</td>
-                <td>台北市大同大學</td>
-                <td>機械工程</td>
-                <td>2008年6月</td>
-            </tr>
-        </table>
+        <div id="collapse_education" class="accordion-body collapse in">
+        	<table class="table">
+            	<tr>
+                	<td><strong class="text-info">學歷</strong></td>
+                	<td><strong class="text-info">學校</strong></td>
+                	<td><strong class="text-info">科系</strong></td>
+                	<td><strong class="text-info">畢業年</strong></td>
+            	</tr>
+            	<tr>
+                	<td>碩士</td>
+                	<td>高雄市中山大學</td>
+                	<td>電機工程(自動控制組)</td>
+                	<td>2013年9月</td>
+            	</tr>
+           		<tr>
+	                <td>學士</td>
+	                <td>台北市大同大學</td>
+	                <td>機械工程</td>
+	                <td>2008年6月</td>
+            	</tr>
+        	</table>
+        </div>
+        <p class="text-center"><img src="img/up_32.png" data-toggle="collapse" href="#collapse_education"></p>
     </div>
 	<!-- 學習經歷 -->
     <div class="panel panel-primary">
-        <div class="panel-heading">學習經歷</div>
-        <div class="jumbotron">
-  			<div class="container">
-  			<h3>大學時期</h3>
-  			大學時期初次接觸程式語言，學校課程為C++程式語言，了解基本邏輯與流程，開始對程式語言感興趣，並選擇朝向電機自動控制組進修。
-			<h3>研究所時期</h3>
-			考取電機控制組後，跟隨學長學習MATLAB，學習物件導向觀念，進行模擬資料分析，我的論文是與成大醫院急診室醫師主任合作，是關於救護車分流，使用MATLAB程式模擬救護車分流的功能，以達到讓整個地區的醫院急診室效能最佳化，並推出新的區域擁擠度觀點，此觀點對整個救護車分流策略有了新視野。
-			<h3>進修時期</h3>
-			畢業後因應環境需求前往「職訓局」參加「App程式與雲端商網建置實務班」共計450個小時，其中學習JAVA、Android、JSP、PHP、MYSQL等技術，並以JSP建置一個「自動排課系統」網頁專案來應用所學。
-  			</div>
+        <div class="panel-heading" data-toggle="collapse" href="#collapse_learning_experience">學習經歷</div>
+        <div id="collapse_learning_experience" class="accordion-body collapse in">
+	        <div class="jumbotron">
+	  			<div class="container">
+	  			<h3>大學時期</h3>
+	  			大學時期初次接觸程式語言，學校課程為C++程式語言，了解基本邏輯與流程，開始對程式語言感興趣，並選擇朝向電機自動控制組進修。
+				<h3>研究所時期</h3>
+				考取電機控制組後，跟隨學長學習MATLAB，學習物件導向觀念，進行模擬資料分析，我的論文是與成大醫院急診室醫師主任合作，是關於救護車分流，使用MATLAB程式模擬救護車分流的功能，以達到讓整個地區的醫院急診室效能最佳化，並推出新的區域擁擠度觀點，此觀點對整個救護車分流策略有了新視野。
+				<h3>進修時期</h3>
+				畢業後因應環境需求前往「職訓局」參加「App程式與雲端商網建置實務班」共計450個小時，其中學習JAVA、Android、JSP、PHP、MYSQL等技術，並以JSP建置一個「自動排課系統」網頁專案來應用所學。
+	  			</div>
+			</div>
 		</div>
+		<p class="text-center"><img src="img/up_32.png" data-toggle="collapse" href="#collapse_learning_experience"></p>
 	</div>
 	<!-- 個人作品 -->
 	<div class="panel panel-primary">
-        <div class="panel-heading">個人作品</div>
-        <div class="jumbotron">
-        	<div class="container">
-        	<h5>利用休閒時間開發個人的作品，皆為個人覺得在生活上遇到的不方便而興起開發念頭</h5>
-        	<blockquote><kbd>打道館 For Pokemon Go</kbd>
-        	<h5>跟著Pokemon Go的熱潮，在打道館時，幫助使用者篩選出屬性相剋的寶可夢，使用浮動視窗以方便篩選不用切換app</h5>
-        	<li><h5>下載人數突破1000人</h5></li>
-        	<li><h5>最高排名在工具類296名 <img src="img/Screenshot_20160921-111143.png" alt=""></h5></li>
-        	<li><h5>說明收錄在巴哈姆特Pokemon Go板精華區 <a href="http://forum.gamer.com.tw/G2.php?bsn=29659&parent=75&sn=438&lorder=2&ptitle=%E2%9E%B7%E9%81%93%E9%A4%A8%E6%8C%91%E6%88%B0%E2%9E%B9%E3%80%80%E6%8C%91%E6%88%B0%EF%BC%8F%E4%BD%94%E9%A0%98" target="_blank">網址</a></h5></li>
-        	<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=com.terryyamg.attributegym" target="_blank">打道館 For Pokemon Go</a></h5></li>
-			</blockquote>
+        <div class="panel-heading" data-toggle="collapse" href="#collapse_personal_gallery">個人作品</div>
+        <div id="collapse_personal_gallery" class="accordion-body collapse in">
+	        <div class="jumbotron">
+	        	<div class="container">
+	        	<h5>利用休閒時間開發個人的作品，皆為個人覺得在生活上遇到的不方便而興起開發念頭</h5>
+	        	<blockquote><kbd>打道館 For Pokemon Go</kbd>
+	        	<h5>跟著Pokemon Go的熱潮，在打道館時，幫助使用者篩選出屬性相剋的寶可夢，使用浮動視窗以方便篩選不用切換app</h5>
+	        	<li><h5>下載人數突破5000人</h5></li>
+	        	<li><h5>最高排名在工具類296名 <img src="img/Screenshot_20160921-111143.png" alt=""></h5></li>
+	        	<li><h5>說明收錄在巴哈姆特Pokemon Go板精華區 <a href="http://forum.gamer.com.tw/G2.php?bsn=29659&parent=75&sn=438&lorder=2&ptitle=%E2%9E%B7%E9%81%93%E9%A4%A8%E6%8C%91%E6%88%B0%E2%9E%B9%E3%80%80%E6%8C%91%E6%88%B0%EF%BC%8F%E4%BD%94%E9%A0%98" target="_blank">網址</a></h5></li>
+	        	<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=com.terryyamg.attributegym" target="_blank">打道館 For Pokemon Go</a></h5></li>
+				</blockquote>
 
-			<blockquote><kbd>Find My Car,找車</kbd>
-        	<h5>機車上班族上班時找停車位停車時，因為常常停在不同地方，當下班時又忘記停在哪，可以利用此app找到停車位置</h5>
-        	<li><h5>使用MVP架構</h5></li>
-        	<li><h5>使用地圖、GPS</h5></li>
-        	<li><h5>原始碼:<a href="https://github.com/terryyamg/FindMyCar" target="_blank">https://github.com/terryyamg/FindMyCar</a></h5></li>
-        	<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=tw.com.terryyamg.findmycar target="_blank">Find My Car,找車</a></h5></li>
-        	</blockquote>
-        	</div>
+				<blockquote><kbd>Find My Car,找車</kbd>
+	        	<h5>新手初次開發，機車上班族上班找停車位停車時，因為常常停在不同地方，下班又忘記停在哪，可以利用此app找到停車位置</h5>
+	        	<li><h5>使用MVP架構</h5></li>
+	        	<li><h5>使用地圖、GPS</h5></li>
+	        	<li><h5>原始碼:<a href="https://github.com/terryyamg/FindMyCar" target="_blank">https://github.com/terryyamg/FindMyCar</a></h5></li>
+	        	<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=tw.com.terryyamg.findmycar" target="_blank">Find My Car,找車</a></h5></li>
+	        	</blockquote>
+	        	</div>
+			</div>
 		</div>
+		<p class="text-center"><img src="img/up_32.png" data-toggle="collapse" href="#collapse_personal_gallery"></p>
 	</div>
 	<!-- 工作經歷 -->
     <div class="panel panel-primary">
-        <div class="panel-heading">工作經歷</div>
-        <div class="jumbotron">
-        	<div class="container">
+        <div class="panel-heading" data-toggle="collapse" href="#collapse_work_experience">工作經歷</div>
+        <div id="collapse_work_experience" class="accordion-body collapse in">
+	        <div class="jumbotron">
+	        	<div class="container">
+				<h3><p class="text-danger">(現職)Kooppi(香港商酷比軟體創作有限公司台灣分公司)（2017年03月~<script>
+	                    var currentTime = new Date();
+	                    var month = currentTime.getMonth() + 1;
+	                    var year = currentTime.getFullYear();
+	                    document.write(year+"年"+month+"月");
+	                    </script>）</p></h3>
+					<h5>在這裡，我撰寫Android與iOS App，並學習合作開發，學習使用Bitbucket + SourceTree版本控制與JIRA Software專案進度管理，並遵循zeplin設計的UI開發商用App</h5>
+					<blockquote><kbd>優惠卷 App(Android、iOS)</kbd>
+						<h5>第一個案子，利用Beacon偵測附近商家並掃描其優惠卷賺取點數，點取地圖可以觀看優惠商家。</h5>
+	  					<li><h5>後端 - 由後端人員製作，與後端串接資料使用Restful api。</h5></li>
+	  					<li><h5>App(Android) - 與另兩位Android developer合作開發，使用技術包含 Beacon應用，Firebase推撥等。</h5></li>
+	  					<li><h5>App(iOS) - 接手外包公司開發到一半的程式，使用Swift 3語法開發，根據Android製作相同功能的app。</h5></li>
+	  					<li><h5>發案公司使用，未上架</h5></li>
+	  				</blockquote>
+	  				<blockquote><kbd>Kabsule App(iOS)</kbd>
+						<h5>公司產品, 一個社群軟體app, 訊息可提供設定未來日期時間，時間到將可開啟</h5>
+						<li><h5>後端 - 由後端人員製作，與後端串接資料使用Restful api。</h5></li>
+						<li><h5>App(iOS) - 與另一位iOS developer共同開發。</h5></li>
+						<li><h5><a href="https://www.kabsule.com/" target="_blank">官網介紹</a></h5></li>
+						<li><h5>App Store:<a href="https://itunes.apple.com/hk/app/kabsule/id1400650497?l=en&mt=8" target="_blank">網址</a></h5></li>
+						
+	  				</blockquote>
+	        	<h3><p class="text-danger">鴻才科技股份有限公司(2014年11月~2017年03月)</p></h3>
 
-        	<h3><p class="text-danger">鴻才科技股份有限公司（2014年11月~<script>
-                    var currentTime = new Date();
-                    var month = currentTime.getMonth() + 1;
-                    var year = currentTime.getFullYear();
-                    document.write(year+"年"+month+"月");
-                    </script>）</p></h3>
-
-        		<h5>在這裡，我獨立幫助公司開發5個Android App,1個iOS App，因為開發App，擴展了公司更多客戶，也成功讓App給既有或新開發的客戶使用，同一個App重複賣給不同公司，賣出的App幫助公司賺了數百萬以上。</h5>
-        		<blockquote><kbd>巡查 App(Android、iOS)</kbd>
-  					<h5>公司主產品，兩種類似性質的App，但專業用途不一樣，目的在於工地檢查異常紀錄，由手機端拍照並紀錄異常狀態，記錄完成後回傳至後端處理。</h5>
-  					<li><h5>後端 - 由後端人員製作。</h5></li>
-  					<li><h5>App(Android) - 開發IDE為Android Studio，使用登入、拍照、推撥、GPS定位、NFC感應、QRcode掃描、Google Map 應用，資料傳輸使用檔案格式、json格式上下傳，後續使用MVP架構部分重構。</h5></li>
-  					<li><h5>App(iOS) - 開發IDE為Xcode，使用Swift 2.2語法開發，使用MVC架構，功能與Android相似。</h5></li>
-  					<li><h5>目前Android App成功於委託公司使用中。</h5></li>
-  					<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=com.httc.pipeline" target="_blank">網址1</a> <a href="https://play.google.com/store/apps/details?id=com.httc.audit" target="_blank">網址2</a></h5></li>
-  					<li><h5>App Store:<a href="https://itunes.apple.com/zh/app/xing-dong-qin-wu-xun-cha/id1121157002?mt=8" target="_blank">網址</a></h5></li>
-  				</blockquote>
-  				<blockquote><kbd>盤點 App(Android)</kbd>
-  					<h5>當倉庫物品不見時，藉由盤點可以找出物品不見的原因，使用感應裝置（NFC，QRcode）感應物品，可進行借出、收回與盤點功能，紀錄並計算數量，完成後，回傳至後端資料庫。</h5>
-  					<li><h5>後端 - 由主管帶領從需求分析到後端資料庫與網頁製作，使用MYSQL做為後端資料庫，UI使用<code><a href="http://dhtmlx.com/" target="_blank">dhtmlx</a></code>，搭配PHP與Javascript製作。</h5></li>
-  					<li><h5>App - 開發IDE為Eclipse，使用GPS定位、NFC感應、QRcode掃描，資料傳輸使用json格式上下傳。</h5></li>
-  				</blockquote>
-  				<blockquote><kbd>巡堂點名 App</kbd>
-  					<h5>開發給學校使用，藉由巡堂人紀錄上課狀態，並回傳不守校規的學生與老師名單，由手機端拍照並記錄違規名單，上傳資料時寄出email通知違規人員。</h5>
-  					<li><h5>後端 - 自己分析需求並製作，藉由前面學到的方式實行之。</h5></li>
-  					<li><h5>App - 開發IDE為Eclipse，使用到登入、拍照、自動寄信功能，資料傳輸使用json格式上下傳。</h5></li>
-  					<li><h5>目前成功於學校使用中。</h5></li>
-  					<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=tw.httc.inspect" target="_blank">網址</a></h5></li>
-  				</blockquote>
-  				<blockquote><kbd>商用 App(Android)</kbd>
-  					<h5>記錄老人照護資料，養護用途App，登入並記錄使用者資料，可進行活動申請，賺取點數，使用點數消費商品。</h5>
-  					<li><h5>後端 - 由後端人員製作。</h5></li>
-  					<li><h5>App - 開發IDE為Eclipse，使用照片裁切、錄音、照片上下傳加解密，資料傳輸配合後端人員使用xml格式上下傳。</h5></li>
-  					<li><h5>目前成功於委託公司使用中。</h5></li>
-  				</blockquote>
-        	<h3><p class="text-danger">曼聯實業有限公司（2014年3月~2014年11月）</p></h3>
-        		<h5>在這裡我正式開始開發App，雖然是初次開發，但老闆交付的功能我都可以在短時間內做出來。</h5>
-				<blockquote><kbd>維護既有的POS系統</kbd>
-					<h5>使用PHP、MYSQL、Javascript與JQuery依客戶需求修改並維護系統。</h5>
-				</blockquote>
-  				<blockquote><kbd>開發Android App</kbd>
-  					<h5>此為第一次正式開發Android App，使用Eclipse開發，應用到的功能為google map、GPS定位、距離偵測、推播訊息、自動更新、自動發信、搜尋功能、前導說明頁、分享功能等等的商業功能，並使用Parse  API為app後台，進行各種資料存取，此App主要功能為:</h5>
-  					<ol>
-  					<li><h5>定點推撥功能:使用者在距離某店家定點範圍內時，跳出推播訊息。</h5></li>
-  					<li><h5>QRcode掃瞄功能:使用者使用QRcode掃描店家QRcode可享優惠，並記錄在雲端網頁上。</h5></li>
-  					<li><h5>購買功能:當使用者購買商品後，會自動推撥與發信給店家。</h5></li>
-  					<li><h5>店家後台功能:店家登入後可看QRcode掃描次數與商品賣出通知。</h5></li>
-  					</ol>
-  					<h5>在計畫終止後，決定繼續尋找開發Android App的公司繼續深入開發。</h5>
-  				</blockquote>
-  			
-  			</div>
+	        		<h5>在這裡，我獨立幫助公司開發5個Android App,1個iOS App，因為開發App，擴展了公司更多客戶，也成功讓App給既有或新開發的客戶使用，同一個App重複賣給不同公司，賣出的App幫助公司賺了數百萬以上。</h5>
+	        		<blockquote><kbd>巡查 App(Android、iOS)</kbd>
+	  					<h5>公司主產品，兩種類似性質的App，但專業用途不一樣，目的在於工地檢查異常紀錄，由手機端拍照並紀錄異常狀態，記錄完成後回傳至後端處理。</h5>
+	  					<li><h5>後端 - 由後端人員製作，與後端串接資料使用Restful api與MQTT。</h5></li>
+	  					<li><h5>App(Android) - 開發IDE為Android Studio，使用登入、拍照、推撥、GPS定位、NFC感應、QRcode掃描、Google Map 應用，資料傳輸使用檔案格式、json格式上下傳，後續使用MVP架構部分重構。</h5></li>
+	  					<li><h5>App(iOS) - 開發IDE為Xcode，使用Swift 2.2語法開發，使用MVC架構，功能與Android相似。</h5></li>
+	  					<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=com.httc.pipeline03" target="_blank">網址</a></h5></li>
+	  					<li><h5>App Store:已下架</h5></li>
+	  				</blockquote>
+	  				<blockquote><kbd>盤點 App(Android)</kbd>
+	  					<h5>當倉庫物品不見時，藉由盤點可以找出物品不見的原因，使用感應裝置（NFC，QRcode）感應物品，可進行借出、收回與盤點功能，紀錄並計算數量，完成後，回傳至後端資料庫。</h5>
+	  					<li><h5>後端 - 由主管帶領從需求分析到後端資料庫與網頁製作，使用MYSQL做為後端資料庫，UI使用<code><a href="http://dhtmlx.com/" target="_blank">dhtmlx</a></code>，搭配PHP與Javascript製作。</h5></li>
+	  					<li><h5>App - 開發IDE為Eclipse，使用GPS定位、NFC感應、QRcode掃描，資料傳輸使用json格式上下傳。</h5></li>
+	  				</blockquote>
+	  				<blockquote><kbd>巡堂點名 App(Android)</kbd>
+	  					<h5>開發給學校使用，藉由巡堂人紀錄上課狀態，並回傳不守校規的學生與老師名單，由手機端拍照並記錄違規名單，上傳資料時寄出email通知違規人員。</h5>
+	  					<li><h5>後端 - 自己分析需求並製作，藉由前面學到的方式實行之。</h5></li>
+	  					<li><h5>App - 開發IDE為Eclipse，使用到登入、拍照、自動寄信功能，資料傳輸使用json格式上下傳。</h5></li>
+	  					<li><h5>Google Play:已下架</h5></li>
+	  				</blockquote>
+	  				<blockquote><kbd>商用 App(Android)</kbd>
+	  					<h5>記錄老人照護資料，養護用途App，登入並記錄使用者資料，可進行活動申請，賺取點數，使用點數消費商品。</h5>
+	  					<li><h5>後端 - 由後端人員製作。</h5></li>
+	  					<li><h5>App - 開發IDE為Eclipse，使用照片裁切、錄音、照片上下傳加解密，資料傳輸配合後端人員使用xml格式上下傳。</h5></li>
+	  					<li><h5>目前成功於委託公司使用中。</h5></li>
+	  				</blockquote>
+	        	<h3><p class="text-danger">曼聯實業有限公司（2014年3月~2014年11月）</p></h3>
+	        		<h5>在這裡我正式開始開發App，雖然是初次開發，但老闆交付的功能我都可以在短時間內做出來。</h5>
+					<blockquote><kbd>維護既有的POS系統</kbd>
+						<h5>使用PHP、MYSQL、Javascript與JQuery依客戶需求修改並維護系統。</h5>
+					</blockquote>
+	  				<blockquote><kbd>開發Android App</kbd>
+	  					<h5>此為第一次正式開發Android App，使用Eclipse開發，應用到的功能為google map、GPS定位、距離偵測、推播訊息、自動更新、自動發信、搜尋功能、前導說明頁、分享功能等等的商業功能，並使用Parse  API為app後台，進行各種資料存取，此App主要功能為:</h5>
+	  					<ol>
+	  					<li><h5>定點推撥功能:使用者在距離某店家定點範圍內時，跳出推播訊息。</h5></li>
+	  					<li><h5>QRcode掃瞄功能:使用者使用QRcode掃描店家QRcode可享優惠，並記錄在雲端網頁上。</h5></li>
+	  					<li><h5>購買功能:當使用者購買商品後，會自動推撥與發信給店家。</h5></li>
+	  					<li><h5>店家後台功能:店家登入後可看QRcode掃描次數與商品賣出通知。</h5></li>
+	  					</ol>
+	  					<h5>在計畫終止後，決定繼續尋找開發Android App的公司繼續深入開發。</h5>
+	  				</blockquote>
+	  			
+	  			</div>
+			</div>
 		</div>
+		<p class="text-center"><img src="img/up_32.png" data-toggle="collapse" href="#collapse_work_experience"></p>
 	</div>
 
     <!-- 程式語言 -->
     <div class="panel panel-primary">
-        <div class="panel-heading">我學過的程式語言</div>
-        <!-- Table -->
-        <table class="table">
-            <tr>
-                <td><strong class="text-info">名稱</strong></td>
-                <td></td>
-                <!-- <td></td> -->
-                <td><strong class="text-info">分數(滿100)</strong></td>
-                <td><strong class="text-info">使用度</strong></td>
-            </tr>
-            <tr>
-                <td>Java</td>
-                <td><img alt="Java" src="img/java.png"></img>
-                </td>
-                <!-- <td class="col-md-3">
-                    <div id="80-progress" style="background:#685178;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
-                </td> -->
-                <td>
-                    <div class="80-score">0</div>
-                </td>
-                <td>目前主要工作</td>
-            </tr>
-            <tr>
-                <td>Swift</td>
-                <td><img alt="Swift" src="img/swift.png"></img>
-                </td>
-                <!-- <td class="col-md-3">
-                    <div class="40-progress" style="background:#EC7B34;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
-                </td> -->
-                <td>
-                    <div class="80-score">0</div>
-                </td>
-                <td>目前主要工作</td>
-            </tr>
-            <tr>
-                <td>Php</td>
-                <td><img alt="Php" src="img/php.png"></img>
-                </td>
-                <!-- <td class="col-md-3">
-                    <div id="60-progress" style="background:#777BB4;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
-                </td> -->
-                <td>
-                    <div id="60-score">0</div>
-                </td>
-                <td>工作需要支援時</td>
-            </tr>
-            <tr>
-                <td>Javascript</td>
-                <td><img alt="Javascript" src="img/javascript.png"></img>
-                </td>
-                <!-- <td class="col-md-3">
-                    <div class="40-progress" style="background:#EF9A09;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
-                </td> -->
-                <td>
-                    <div class="40-score">0</div>
-                </td>
-                <td>工作需要支援時</td>
-            </tr>
-            <tr>
-                <td>Jsp</td>
-                <td><img alt="Jsp" src="img/jsp.png"></img>
-                </td>
-                <!-- <td class="col-md-3">
-                    <div class="40-progress" style="background:#CAA1A0;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
-                </td> -->
-                <td>
-                    <div class="40-score">0</div>
-                </td>
-                <td>曾經做過專題</td>
-            </tr>
-            <tr>
-                <td>Matlab</td>
-                <td><img alt="Matlab" src="img/matlab.png"></img>
-                </td>
-                <!-- <td class="col-md-3">
-                    <div class="40-progress" style="background:#BB513E;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
-                </td> -->
-                <td>
-                    <div class="40-score">0</div>
-                </td>
-                <td>研究所論文</td>
-            </tr>
-        </table>
+        <div class="panel-heading" data-toggle="collapse" href="#collapse_programming_language">我學過的程式語言</div>
+        <div id="collapse_programming_language" class="accordion-body collapse in">
+	        <!-- Table -->
+	        <table class="table">
+	            <tr>
+	                <td><strong class="text-info">名稱</strong></td>
+	                <td></td>
+	                <!-- <td></td> -->
+	                <td><strong class="text-info">分數(滿100)</strong></td>
+	                <td><strong class="text-info">使用度</strong></td>
+	            </tr>
+	            <tr>
+	                <td>Swift</td>
+	                <td><img alt="Swift" src="img/swift.png"></img>
+	                </td>
+	                <!-- <td class="col-md-3">
+	                    <div class="40-progress" style="background:#EC7B34;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
+	                </td> -->
+	                <td>
+	                    <div class="80-score">0</div>
+	                </td>
+	                <td>目前主要工作</td>
+	            </tr>
+	            <tr>
+	                <td>Java</td>
+	                <td><img alt="Java" src="img/java.png"></img>
+	                </td>
+	                <!-- <td class="col-md-3">
+	                    <div id="80-progress" style="background:#685178;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
+	                </td> -->
+	                <td>
+	                    <div class="70-score">0</div>
+	                </td>
+	                <td>擱置一段時間了，複習中</td>
+	            </tr>
+	            <tr>
+	                <td>Php</td>
+	                <td><img alt="Php" src="img/php.png"></img>
+	                </td>
+	                <!-- <td class="col-md-3">
+	                    <div id="60-progress" style="background:#777BB4;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
+	                </td> -->
+	                <td>
+	                    <div id="60-score">0</div>
+	                </td>
+	                <td>很少用了</td>
+	            </tr>
+	            <tr>
+	                <td>Javascript</td>
+	                <td><img alt="Javascript" src="img/javascript.png"></img>
+	                </td>
+	                <!-- <td class="col-md-3">
+	                    <div class="40-progress" style="background:#EF9A09;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
+	                </td> -->
+	                <td>
+	                    <div class="40-score">0</div>
+	                </td>
+	                <td>很少用了</td>
+	            </tr>
+	        </table>
+	   	</div>
+	   	<p class="text-center"><img src="img/up_32.png" data-toggle="collapse" href="#collapse_programming_language"></p>
     </div>
     <script>
     $(".80-progress").animate({
         width: '300px'
     }, 2000, 'easeOutCubic');
     $('.80-score').animateNumbers(80, true, 1000);
+    $(".70-progress").animate({
+        width: '300px'
+    }, 2000, 'easeOutCubic');
+    $('.70-score').animateNumbers(70, true, 1000);
     $("#60-progress").animate({
         width: '200px'
     }, 2000, 'easeOutCubic');
@@ -342,87 +343,151 @@
         width: '100px'
     }, 2000, 'easeOutCubic');
     $('.40-score').animateNumbers(40, true, 1000);
+    $(".20-progress").animate({
+        width: '100px'
+    }, 2000, 'easeOutCubic');
+    $('.20-score').animateNumbers(20, true, 1000);
     </script>
     <!-- 其他資訊 -->
     <div class="panel panel-primary">
-        <div class="panel-heading">其他資訊</div>
-        <table class="table">
-            <tr>
-                <td><strong class="text-info">常用資料庫：</strong></td>
-                <td>
-                    <h4><code>MySQL</code>　<code>SQLite</code></h4></td>
-            </tr>
-            <tr>
-                <td><strong class="text-info">常用傳輸資料格式：</strong></td>
-                <td>
-                    <h4><code>JSON</code>　<code>XML</code></h4></td>
-            </tr>
-            <tr>
-                <td><strong class="text-info">常用IDE：</strong></td>
-                <td>
-                    <table class="table table-bordered">
-                        <tr>
-                            <td>Android開發</td>
-                            <td>
-                                <h4><code>Eclipse</code>　<code>Android Studio</code></h4></td>
-                        </tr>
-                        <tr>
-                            <td>iOS開發</td>
-                            <td>
-                                <h4><code>Xcode</code></h4></td>
-                    	</tr>
-                    	<tr>
-                    		<td>Web開發</td>
-                    		<td><h4><code>Sublime</code>　<code>codeLobster</code></h4></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td><strong class="text-info">第三方套件：</strong></td>
-                <td>
-                    <table class="table table-bordered">
-                        <tr>
-                            <td>雲端後台</td>
-                            <td>
-                                <h4><code><a href="https://parse.com/" target="_blank">Parse</a></code></h4></td>
-                        </tr>
-                        <tr>
-                            <td>Android UI</td>
-                            <td>
-                                <h4><code><a href="https://github.com/rey5137/material" target="_blank">Material</a></code>　<code><a href="https://github.com/navasmdc/MaterialDesignLibrary" target="_blank">MaterialDesignLibrary</a></code></h4></td>
-                    	</tr>
-                    	<tr>
-                    		<td>Android 套件</td>
-                    		<td><h4><code><a href="https://github.com/ReactiveX/RxJava" target="_blank">RxJAVA</a></code>　<code><a href="https://github.com/zxing/zxing" target="_blank">zxing</a></code>　<code><a href="https://github.com/PhilJay/MPAndroidChart" target="_blank">MPAndroidChart</a></code>　<code><a href="https://github.com/biokys/cropimage" target="_blank">cropimage</a></code>　<code>google analytics</code></h4></td>
-                        </tr>
-                        <tr>
-                            <td>iOS 套件</td>
-                            <td>
-                                <h4><code><a href="https://cocoapods.org/" target="_blank">CocoaPods</a></code>　<code><a href="https://github.com/krzyzanowskim/CryptoSwift" target="_blank">CryptoSwift</a></code>　<code><a href="https://github.com/cbpowell/MarqueeLabel-Swift" target="_blank">MarqueeLabel</a></code>　<code><a href="https://github.com/shamasshahid/SSRadioButtonsController" target="_blank">SSRadioButtonsController</a></code>　<code><a href="https://github.com/Alamofire/Alamofire" target="_blank">Alamofire</a></code></h4></td>
-                    	</tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-            <td><strong class="text-info">常用功能：</strong></td>
-            <td><h4><code>Google Map</code>　<code>GPS距離計算</code>　<code>NFC感應</code>　<code>QRcode掃描</code></h4>　<h4><code>資料對接</code>　<code>拍照</code>　<code>等...(請參閱<a href="http://terryyamg.blogspot.tw/" target="_blank">http://terryyamg.blogspot.tw/</a>)</code>　</h4></td>
-            </tr>
-        </table>
+        <div class="panel-heading" data-toggle="collapse" href="#collapse_other_information">其他資訊</div>
+        <div id="collapse_other_information" class="accordion-body collapse in">
+	        <table class="table">
+	            <tr>
+	                <td><strong class="text-info">常用資料庫：</strong></td>
+	                <td>
+	                    <h4><code>MySQL</code>　<code>SQLite</code></h4></td>
+	            </tr>
+	            <tr>
+	                <td><strong class="text-info">常用傳輸資料格式：</strong></td>
+	                <td>
+	                    <h4><code>JSON</code>　<code>XML</code></h4></td>
+	            </tr>
+	            <tr>
+	                <td><strong class="text-info">常用IDE：</strong></td>
+	                <td>
+	                    <table class="table table-bordered">
+	                        <tr>
+	                            <td>Android開發</td>
+	                            <td>
+	                                <h4><code>Eclipse</code>　<code>Android Studio</code></h4></td>
+	                        </tr>
+	                        <tr>
+	                            <td>iOS開發</td>
+	                            <td>
+	                                <h4><code>Xcode</code></h4></td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>Web開發</td>
+	                    		<td><h4><code>Sublime</code>　<code>codeLobster</code></h4></td>
+	                        </tr>
+	                    </table>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td><strong class="text-info">第三方套件：</strong></td>
+	                <td>
+	                    <table class="table table-bordered">
+	                        <tr>
+	                            <td>雲端後台</td>
+	                            <td>
+	                                <h4>
+	                                	<code><a href="https://firebase.google.com/" target="_blank">Firebase</a></code>
+	                                </h4>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td>推撥</td>
+	                            <td>
+	                                <h4>
+	                                	<code><a href="https://firebase.google.com/docs/cloud-messaging/" target="_blank">FCM</a></code>
+	                    				<code><a href="http://push.baidu.com/" target="_blank">百度云推送</a></code>
+	                                </h4>
+	                            </td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>Android 套件</td>
+	                    		<td>
+	                    			<h4>
+	                    				<code><a href="https://github.com/ReactiveX/RxJava" target="_blank">RxJAVA</a></code>
+	                    				<code><a href="https://github.com/zxing/zxing" target="_blank">zxing</a></code>
+	                    				<code><a href="https://github.com/PhilJay/MPAndroidChart" target="_blank">MPAndroidChart</a></code>
+	                    				<code><a href="https://www.google.com.tw/intl/zh-TW/analytics/" target="_blank">Google Analytics</a></code>
+	                    				<code><a href="https://developers.facebook.com/docs/facebook-login/android?locale=zh_TW" target="_blank">Facebook Login</a></code>
+
+	                    			</h4>
+	                    		</td>
+	                        </tr>
+	                        <tr>
+	                            <td>iOS 套件</td>
+	                            <td>
+	                                <h4>
+	                                	<code><a href="https://cocoapods.org/" target="_blank">CocoaPods</a></code>
+	                                	<code><a href="https://github.com/Alamofire/Alamofire" target="_blank">Alamofire</a></code>
+	                                	<code><a href="https://github.com/mac-cain13/R.swift" target="_blank">R.swift</a></code>
+	                                	<code><a href="https://github.com/Moya/Moya" target="_blank">Moya</a></code>
+	                                	<code><a href="https://github.com/Hearst-DD/ObjectMapper" target="_blank">ObjectMapper</a></code>
+	                                	<code><a href="https://github.com/Haneke/HanekeSwift" target="_blank">HanekeSwift</a></code>
+	                                	<code><a href="https://github.com/onevcat/Kingfisher" target="_blank">Kingfisher</a></code>
+	                                	<code><a href="https://open.weixin.qq.com/" target="_blank">Wechat Login</a></code>
+	                                </h4>
+	                            </td>
+	                    	</tr>
+	                    </table>
+	                </td>
+	            </tr>
+	            <tr>
+	            <tr>
+	                <td><strong class="text-info">工具：</strong></td>
+	                <td>
+	                    <table class="table table-bordered">
+	                    	<tr>
+	                            <td>版本控制</td>
+	                            <td>
+	                                <h4><code><a href="https://github.com/" target="_blank">GitHub</a></code>
+	                                	<code><a href="https://bitbucket.org/" target="_blank">Bitbucket</a></code>
+	                                	<code><a href="https://www.sourcetreeapp.com/" target="_blank">SourceTree</a></code>
+	                                </h4>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td>專案管理</td>
+	                            <td>
+	                                <h4><code><a href="https://www.atlassian.com/software/jira" target="_blank">JIRA</a></code>
+	                                </h4>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td>UI工具</td>
+	                            <td>
+	                                <h4><code><a href="https://zeplin.io/" target="_blank">Zeplin</a></code>
+	                                </h4>
+	                            </td>
+	                        </tr>
+	                    </table>
+	                </td>
+	            </tr>
+	            <td><strong class="text-info">常用功能：</strong></td>
+	            <td><h4><code>Google Map</code>　<code>GPS距離計算</code>　<code>NFC感應</code>　<code>QRcode掃描</code></h4>　<h4><code>Restful api資料對接</code>　<code>拍照</code> <code>推撥處理</code>　<code>等...(請參閱<a href="http://terryyamg.blogspot.tw/" target="_blank">http://terryyamg.blogspot.tw/</a>)</code>　</h4></td>
+	            </tr>
+	        </table>
+	   	</div>
+	   	<p class="text-center"><img src="img/up_32.png" data-toggle="collapse" href="#collapse_other_information"></p>
     </div>
 	<!-- 個人特質 -->
     <div class="panel panel-primary">
-        <div class="panel-heading">個人特質</div>
-        <div class="jumbotron">
-  			<div class="container">
-  			<li><h5>擅長找出解決方案，然後記錄起來，需要用到時再拿出來。</h5></li>
-  			<li><h5>習慣先以解決問題為第一目標，再來尋找最佳解。</h5></li>
-  			<li><h5>我的思考模式是只要有人做過，就一定可以找到方法，雖然不一定是最佳解。</h5></li>
-  			<li><h5>遇到問題時，習慣從英文關鍵字開始搜尋，基本上stackoverflow就可以找到答案，必要時才進行發問。</h5></li>
-  			<li><h5>像嬰兒一樣充滿好奇，喜歡吸收一些新知識，每天都一點一點的學習，今天的我必須比昨天的我更了解這個世界。</h5></li>
-  			<li><h5>喜歡剝絲抽繭的循線搜尋，所以有個外號叫鍵盤柯南。</h5></li>
-  			</div>
+        <div class="panel-heading" data-toggle="collapse" href="#collapse_personal_characteristics">個人特質</div>
+        <div id="collapse_personal_characteristics" class="accordion-body collapse in">
+	        <div class="jumbotron">
+	  			<div class="container">
+	  			<li><h5>擅長找出解決方案，然後記錄起來，需要用到時再拿出來。</h5></li>
+	  			<li><h5>給我功能，給你app</h5></li>
+	  			<li><h5>像嬰兒一樣充滿好奇，喜歡吸收一些新知識，每天都一點一點的學習，今天的我必須比昨天的我更了解這個世界。</h5></li>
+	  			<li><h5>喜歡剝絲抽繭的循線搜尋，所以有個外號叫鍵盤柯南。</h5></li>
+	  			</div>
+			</div>
 		</div>
+		<p class="text-center"><img src="img/up_32.png" data-toggle="collapse" href="#collapse_personal_characteristics"></p>
 	</div>
 
 	<!-- 致謝 -->
