@@ -48,23 +48,16 @@
                 <td class="col-md-3">
                     <script>
                     var currentTime = new Date();
-                    var month = currentTime.getMonth() + 1;
-                    var day = currentTime.getDate();
                     var year = currentTime.getFullYear();
 
                     var set_y = year; //指定日期的年份
                     var set_m = 11; //指定日期的月份
-                    var set_d = 01; //指定的日期
+                    var set_d = 1; //指定的日期
                     var now = new Date();
                     var spday = new Date(set_y, set_m - 1, set_d);
-                    var d = (spday.getTime() - now.getTime()) / (24 * 60 * 60 * 1000);
+                    var d = (spday.getTime() - now.getTime());
                     d = Math.ceil(d);
-                    var age;
-                    if (d > 0) {
-                        age = year - 1984 - 1;
-                    } else {
-                        age = year - 1984;
-                    }
+                    var age = d > 0 ? year - 1984 - 1 :  year - 1984;
 
                     document.write(age);
                     </script>
@@ -87,8 +80,8 @@
                     });
                     </script>
                 </td>
-                <td><strong class="text-info">駕照：</strong></td>
-                <td class="col-md-3">普通重型機車</td>
+                <td><strong class="text-info">學歷：</strong></td>
+                <td class="col-md-3">中山大學-電機自動控制組碩士2013年9月畢</td>
             </tr>
             <tr>
                 
@@ -103,7 +96,24 @@
             </tr>
             <tr>
             	<td><strong class="text-info">期望職位：</strong></td>
-            	<td class="col-md-3">Android iOS工程師(年資:Android 2.5年,iOS 2年)</td>
+            	<td class="col-md-3">Android iOS工程師(年資:<script>
+            		var currentTime = new Date();
+                    var year = currentTime.getFullYear();
+
+                    var set_y = year; //指定日期的年份
+                    var set_m = 3; //指定日期的月份
+                    var set_d = 1; //指定的日期
+                    var now = new Date();
+                    var spday = new Date(set_y, set_m - 1, set_d);
+                    var y = (spday.getTime() - now.getTime());
+                    y = Math.ceil(y);
+                    var workYear = y > 0 ? year - 2014 - 1 :  year - 2014;
+                    var m = 365 - (spday.getTime() - now.getTime()) / (24 * 60 * 60 * 1000); 
+                    m = m / 31
+                    m = Math.floor(m);
+                    var workMonth = m >= 12 ? m - 12 : m
+                    document.write(workYear+ " 年" + workMonth + " 月");
+	                    </script>)</td>
             	<td><strong class="text-info">期望薪資：</strong></td>
             	<td class="col-md-3"><p class="text-danger">年薪80萬 ↑</p></td>
             	<td><strong class="text-info">期望城市：</strong></td>
@@ -111,51 +121,6 @@
             </tr>
         </table>
     </div>
-    <!-- 學歷 -->
-    <div class="panel panel-primary">
-        <div class="panel-heading" data-toggle="collapse" href="#collapse_education">學歷</div>
-        <!-- Table -->
-        <div id="collapse_education" class="accordion-body collapse in">
-        	<table class="table">
-            	<tr>
-                	<td><strong class="text-info">學歷</strong></td>
-                	<td><strong class="text-info">學校</strong></td>
-                	<td><strong class="text-info">科系</strong></td>
-                	<td><strong class="text-info">畢業年</strong></td>
-            	</tr>
-            	<tr>
-                	<td>碩士</td>
-                	<td>高雄市中山大學</td>
-                	<td>電機工程(自動控制組)</td>
-                	<td>2013年9月</td>
-            	</tr>
-           		<tr>
-	                <td>學士</td>
-	                <td>台北市大同大學</td>
-	                <td>機械工程</td>
-	                <td>2008年6月</td>
-            	</tr>
-        	</table>
-        </div>
-        <p class="text-center"><img src="img/up_32.png" data-toggle="collapse" href="#collapse_education"></p>
-    </div>
-	<!-- 學習經歷 -->
-    <div class="panel panel-primary">
-        <div class="panel-heading" data-toggle="collapse" href="#collapse_learning_experience">學習經歷</div>
-        <div id="collapse_learning_experience" class="accordion-body collapse in">
-	        <div class="jumbotron">
-	  			<div class="container">
-	  			<h3>大學時期</h3>
-	  			大學時期初次接觸程式語言，學校課程為C++程式語言，了解基本邏輯與流程，開始對程式語言感興趣，並選擇朝向電機自動控制組進修。
-				<h3>研究所時期</h3>
-				考取電機控制組後，跟隨學長學習MATLAB，學習物件導向觀念，進行模擬資料分析，我的論文是與成大醫院急診室醫師主任合作，是關於救護車分流，使用MATLAB程式模擬救護車分流的功能，以達到讓整個地區的醫院急診室效能最佳化，並推出新的區域擁擠度觀點，此觀點對整個救護車分流策略有了新視野。
-				<h3>進修時期</h3>
-				畢業後因應環境需求前往「職訓局」參加「App程式與雲端商網建置實務班」共計450個小時，其中學習JAVA、Android、JSP、PHP、MYSQL等技術，並以JSP建置一個「自動排課系統」網頁專案來應用所學。
-	  			</div>
-			</div>
-		</div>
-		<p class="text-center"><img src="img/up_32.png" data-toggle="collapse" href="#collapse_learning_experience"></p>
-	</div>
 	<!-- 個人作品 -->
 	<div class="panel panel-primary">
         <div class="panel-heading" data-toggle="collapse" href="#collapse_personal_gallery">個人作品</div>
@@ -163,7 +128,7 @@
 	        <div class="jumbotron">
 	        	<div class="container">
 	        	<h5>利用休閒時間開發個人的作品，皆為個人覺得在生活上遇到的不方便而興起開發念頭</h5>
-	        	<blockquote><kbd>打道館 For Pokemon Go</kbd>
+	        	<blockquote><kbd>打道館 For Pokemon Go(Android)【2016年】</kbd>
 	        	<h5>跟著Pokemon Go的熱潮，在打道館時，幫助使用者篩選出屬性相剋的寶可夢，使用浮動視窗以方便篩選不用切換app</h5>
 	        	<li><h5>下載人數突破5000人</h5></li>
 	        	<li><h5>最高排名在工具類296名 <img src="img/Screenshot_20160921-111143.png" alt=""></h5></li>
@@ -171,12 +136,26 @@
 	        	<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=com.terryyamg.attributegym" target="_blank">打道館 For Pokemon Go</a></h5></li>
 				</blockquote>
 
-				<blockquote><kbd>Find My Car,找車</kbd>
+				<blockquote><kbd>Find My Car,找車(Android)【2016年】</kbd>
 	        	<h5>新手初次開發，機車上班族上班找停車位停車時，因為常常停在不同地方，下班又忘記停在哪，可以利用此app找到停車位置</h5>
 	        	<li><h5>使用MVP架構</h5></li>
 	        	<li><h5>使用地圖、GPS</h5></li>
 	        	<li><h5>原始碼:<a href="https://github.com/terryyamg/FindMyCar" target="_blank">https://github.com/terryyamg/FindMyCar</a></h5></li>
 	        	<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=tw.com.terryyamg.findmycar" target="_blank">Find My Car,找車</a></h5></li>
+	        	</blockquote>
+
+	        	<blockquote><kbd>老人照護(iOS)【2018年】</kbd>
+	        	<h5>幫友人開發, 兩個App, 一個給看護人員使用, 一個給老人家使用, 兩方皆要註冊帳號, 看護方須通過後台認證, 老人家方須通過信用卡註冊, 可選擇看護與項目並付費後, 看護同意再次確認並可開始定時照護</h5>
+	        	<li><h5>使用MVC架構，使用Swift 4.0語法開發</h5></li>
+	        	<li><h5>使用信用卡套件, 與後端串接資料使用Restful api。</h5></li>
+				<li><h5>App Store:<a href="https://itunes.apple.com/hk/app/onecare-plus/id1436852002?mt=8" target="_blank">網址</a></h5></li>
+	        	</blockquote>
+
+	        	<blockquote><kbd>補習班(iOS)【2019年】</kbd>
+	        	<h5>幫友人開發, 登入身分老師與學生, 觀看公告, 上傳作業, 線上測驗與聯絡簿等功能</h5>
+	        	<li><h5>使用MVVM架構，使用Swift 4.1語法開發</h5></li>
+	        	<li><h5>與後端串接資料使用Restful api。</h5></li>
+	        	<li><h5>未上架</h5></li>
 	        	</blockquote>
 	        	</div>
 			</div>
@@ -204,7 +183,7 @@
 	  					<li><h5>發案公司使用，未上架</h5></li>
 	  				</blockquote>
 	  				<blockquote><kbd>Kabsule App(iOS)</kbd>
-						<h5>公司產品, 一個社群軟體app, 訊息可提供設定未來日期時間，時間到將可開啟</h5>
+						<h5>公司產品, 一個社群軟體app, 訊息可提供設定未來日期時間，時間到將可開啟, 可上傳影音與照片, 是一個中大型App</h5>
 						<li><h5>後端 - 由後端人員製作，與後端串接資料使用Restful api。</h5></li>
 						<li><h5>App(iOS) - 與另一位iOS developer共同開發。</h5></li>
 						<li><h5><a href="https://www.kabsule.com/" target="_blank">官網介紹</a></h5></li>
@@ -278,21 +257,24 @@
 	                <td>Swift</td>
 	                <td><img alt="Swift" src="img/swift.png"></img>
 	                </td>
-	                <!-- <td class="col-md-3">
-	                    <div class="40-progress" style="background:#EC7B34;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
-	                </td> -->
 	                <td>
 	                    <div class="80-score">0</div>
 	                </td>
 	                <td>目前主要工作</td>
 	            </tr>
 	            <tr>
+	                <td>Kotlin</td>
+	                <td><img alt="Kotlin" src="img/kotlin.png"></img>
+	                </td>
+	                <td>
+	                    <div class="70-score">0</div>
+	                </td>
+	                <td>學習中</td>
+	            </tr>
+	            <tr>
 	                <td>Java</td>
 	                <td><img alt="Java" src="img/java.png"></img>
 	                </td>
-	                <!-- <td class="col-md-3">
-	                    <div id="80-progress" style="background:#685178;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
-	                </td> -->
 	                <td>
 	                    <div class="70-score">0</div>
 	                </td>
@@ -302,9 +284,6 @@
 	                <td>Php</td>
 	                <td><img alt="Php" src="img/php.png"></img>
 	                </td>
-	                <!-- <td class="col-md-3">
-	                    <div id="60-progress" style="background:#777BB4;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
-	                </td> -->
 	                <td>
 	                    <div id="60-score">0</div>
 	                </td>
@@ -314,9 +293,6 @@
 	                <td>Javascript</td>
 	                <td><img alt="Javascript" src="img/javascript.png"></img>
 	                </td>
-	                <!-- <td class="col-md-3">
-	                    <div class="40-progress" style="background:#EF9A09;height:20px;width:20px;left:350px;position:absolute;border-radius:5px;"></div>
-	                </td> -->
 	                <td>
 	                    <div class="40-score">0</div>
 	                </td>
@@ -353,6 +329,11 @@
         <div class="panel-heading" data-toggle="collapse" href="#collapse_other_information">其他資訊</div>
         <div id="collapse_other_information" class="accordion-body collapse in">
 	        <table class="table">
+	        	 <tr>
+	                <td><strong class="text-info">架構：</strong></td>
+	                <td>
+	                    <h4>大部分都用<code>MVC</code>, 近期專案改用<code>MVVM</code></h4></td>
+	            </tr>
 	            <tr>
 	                <td><strong class="text-info">常用資料庫：</strong></td>
 	                <td>
@@ -370,7 +351,7 @@
 	                        <tr>
 	                            <td>Android開發</td>
 	                            <td>
-	                                <h4><code>Eclipse</code>　<code>Android Studio</code></h4></td>
+	                                <h4><code>Android Studio</code></h4></td>
 	                        </tr>
 	                        <tr>
 	                            <td>iOS開發</td>
@@ -379,7 +360,7 @@
 	                    	</tr>
 	                    	<tr>
 	                    		<td>Web開發</td>
-	                    		<td><h4><code>Sublime</code>　<code>codeLobster</code></h4></td>
+	                    		<td><h4><code>Sublime</code></h4></td>
 	                        </tr>
 	                    </table>
 	                </td>
@@ -425,11 +406,10 @@
 	                                	<code><a href="https://cocoapods.org/" target="_blank">CocoaPods</a></code>
 	                                	<code><a href="https://github.com/Alamofire/Alamofire" target="_blank">Alamofire</a></code>
 	                                	<code><a href="https://github.com/mac-cain13/R.swift" target="_blank">R.swift</a></code>
-	                                	<code><a href="https://github.com/Moya/Moya" target="_blank">Moya</a></code>
-	                                	<code><a href="https://github.com/Hearst-DD/ObjectMapper" target="_blank">ObjectMapper</a></code>
 	                                	<code><a href="https://github.com/Haneke/HanekeSwift" target="_blank">HanekeSwift</a></code>
 	                                	<code><a href="https://github.com/onevcat/Kingfisher" target="_blank">Kingfisher</a></code>
 	                                	<code><a href="https://open.weixin.qq.com/" target="_blank">Wechat Login</a></code>
+	                    				<code><a href="https://developers.facebook.com/docs/facebook-login/ios" target="_blank">Facebook Login</a></code>
 	                                </h4>
 	                            </td>
 	                    	</tr>
@@ -481,7 +461,7 @@
 	        <div class="jumbotron">
 	  			<div class="container">
 	  			<li><h5>擅長找出解決方案，然後記錄起來，需要用到時再拿出來。</h5></li>
-	  			<li><h5>給我功能，給你app</h5></li>
+	  			<li><h5>喜歡看書, 桌遊與棒球。</h5></li>
 	  			<li><h5>像嬰兒一樣充滿好奇，喜歡吸收一些新知識，每天都一點一點的學習，今天的我必須比昨天的我更了解這個世界。</h5></li>
 	  			<li><h5>喜歡剝絲抽繭的循線搜尋，所以有個外號叫鍵盤柯南。</h5></li>
 	  			</div>
