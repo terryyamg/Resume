@@ -112,10 +112,10 @@
                     m = m / 31
                     m = Math.floor(m);
                     var workMonth = m >= 12 ? m - 12 : m
-                    document.write(workYear+ " 年" + workMonth + " 月");
+                    document.write(workYear+ "年" + workMonth + "個月");
 	                    </script>)</td>
             	<td><strong class="text-info">期望薪資：</strong></td>
-            	<td class="col-md-3"><p class="text-danger">年薪80萬 ↑</p></td>
+            	<td class="col-md-3"><p class="text-danger">年薪70~80萬</p></td>
             	<td><strong class="text-info">期望城市：</strong></td>
             	<td class="col-md-3">高雄市</td>
             </tr>
@@ -127,36 +127,54 @@
         <div id="collapse_personal_gallery" class="accordion-body collapse in">
 	        <div class="jumbotron">
 	        	<div class="container">
-	        	<h5>利用休閒時間開發個人的作品，皆為個人覺得在生活上遇到的不方便而興起開發念頭</h5>
+				<h5>利用休閒時間開發個人的作品，皆為個人覺得在生活上遇到的不方便而興起開發念頭</h5>
+				
+				<blockquote><kbd>補習班(iOS)【2019年】</kbd>
+				<h5>幫友人開發, 登入身分老師與學生, 觀看公告, 上傳作業, 線上測驗與聯絡簿等功能</h5>
+				<li><h5>使用MVVM架構，使用Swift 4.1語法開發</h5></li>
+				<li><h5>與後端串接資料使用Restful api。</h5></li>
+				<li><h5>未上架</h5></li>
+				</blockquote>
+					
+				<blockquote><kbd>覺醒圖(Android)【2019年】</kbd>
+				<h5>白貓app遊戲抽角抽不到,但也想看角色圖,又懶得去找網站,於是寫了一個爬蟲抓取資料與圖片方片查找的app</h5>
+				<li><h5>使用MVC架構，初次使用Kotlin語法開發</h5></li>
+				<li><h5>使用Realm做db, JSOUP爬蟲, Firebase Crashlytics來除錯。</h5></li>
+				<li><h5>下載人數1000+, 使用人數800+ 上升中</h5></li>
+				<li><h5>Google Play: <a href="https://play.google.com/store/apps/details?id=com.terryyamg.whitecatshowimage" target="_blank"><img src="img/google-play.png"></a></h5></li>
+				</blockquote>
+	
+				<blockquote><kbd>哈哈GIF(Android)【2019年】</kbd>
+				<h5>想看好笑的短片GIF然後分享到即時通訊</h5>
+				<li><h5>再次使用Kotlin語法開發</h5></li>
+				<li><h5>JSOUP爬蟲, Firebase Crashlytics來除錯。</h5></li>
+				<li><h5>下載人數...5+, 幫下載QQ</h5></li>
+				<li><h5>Google Play: <a href="https://play.google.com/store/apps/details?id=com.terryyamg.hahagif" target="_blank"><img src="img/google-play.png"></a></h5></li>
+				</blockquote>
+
+	        	<blockquote><kbd>老人照護(iOS)【2018年】</kbd>
+				<h5>幫友人開發, 兩個App, 一個給看護人員使用, 一個給老人家使用, 兩方皆要註冊帳號, 看護方須通過後台認證, 老人家方須通過信用卡註冊, 可選擇看護與項目並付費後, 看護同意再次確認並可開始定時照護</h5>
+				<li><h5>使用MVC架構，使用Swift 4.0語法開發</h5></li>
+				<li><h5>使用信用卡套件, 與後端串接資料使用Restful api。</h5></li>
+				<li><h5>Google Play: <a href="https://itunes.apple.com/hk/app/onecare-plus/id1436852002?mt=8" target="_blank"><img src="img/app-store.png"></a></h5></li>
+				</blockquote>
+
 	        	<blockquote><kbd>打道館 For Pokemon Go(Android)【2016年】</kbd>
 	        	<h5>跟著Pokemon Go的熱潮，在打道館時，幫助使用者篩選出屬性相剋的寶可夢，使用浮動視窗以方便篩選不用切換app</h5>
 	        	<li><h5>下載人數突破5000人</h5></li>
 	        	<li><h5>最高排名在工具類296名 <img src="img/Screenshot_20160921-111143.png" alt=""></h5></li>
 	        	<li><h5>說明收錄在巴哈姆特Pokemon Go板精華區 <a href="http://forum.gamer.com.tw/G2.php?bsn=29659&parent=75&sn=438&lorder=2&ptitle=%E2%9E%B7%E9%81%93%E9%A4%A8%E6%8C%91%E6%88%B0%E2%9E%B9%E3%80%80%E6%8C%91%E6%88%B0%EF%BC%8F%E4%BD%94%E9%A0%98" target="_blank">網址</a></h5></li>
-	        	<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=com.terryyamg.attributegym" target="_blank">打道館 For Pokemon Go</a></h5></li>
+	        	<li><h5>Google Play: <a href="https://play.google.com/store/apps/details?id=com.terryyamg.attributegym" target="_blank"><img src="img/google-play.png"></a></h5></li>
 				</blockquote>
 
-				<blockquote><kbd>Find My Car,找車(Android)【2016年】</kbd>
+				<!-- <blockquote><kbd>Find My Car,找車(Android)【2016年】</kbd>
 	        	<h5>新手初次開發，機車上班族上班找停車位停車時，因為常常停在不同地方，下班又忘記停在哪，可以利用此app找到停車位置</h5>
 	        	<li><h5>使用MVP架構</h5></li>
 	        	<li><h5>使用地圖、GPS</h5></li>
 	        	<li><h5>原始碼:<a href="https://github.com/terryyamg/FindMyCar" target="_blank">https://github.com/terryyamg/FindMyCar</a></h5></li>
 	        	<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=tw.com.terryyamg.findmycar" target="_blank">Find My Car,找車</a></h5></li>
-	        	</blockquote>
+	        	</blockquote> -->
 
-	        	<blockquote><kbd>老人照護(iOS)【2018年】</kbd>
-	        	<h5>幫友人開發, 兩個App, 一個給看護人員使用, 一個給老人家使用, 兩方皆要註冊帳號, 看護方須通過後台認證, 老人家方須通過信用卡註冊, 可選擇看護與項目並付費後, 看護同意再次確認並可開始定時照護</h5>
-	        	<li><h5>使用MVC架構，使用Swift 4.0語法開發</h5></li>
-	        	<li><h5>使用信用卡套件, 與後端串接資料使用Restful api。</h5></li>
-				<li><h5>App Store:<a href="https://itunes.apple.com/hk/app/onecare-plus/id1436852002?mt=8" target="_blank">網址</a></h5></li>
-	        	</blockquote>
-
-	        	<blockquote><kbd>補習班(iOS)【2019年】</kbd>
-	        	<h5>幫友人開發, 登入身分老師與學生, 觀看公告, 上傳作業, 線上測驗與聯絡簿等功能</h5>
-	        	<li><h5>使用MVVM架構，使用Swift 4.1語法開發</h5></li>
-	        	<li><h5>與後端串接資料使用Restful api。</h5></li>
-	        	<li><h5>未上架</h5></li>
-	        	</blockquote>
 	        	</div>
 			</div>
 		</div>
@@ -183,11 +201,11 @@
 	  					<li><h5>發案公司使用，未上架</h5></li>
 	  				</blockquote>
 	  				<blockquote><kbd>Kabsule App(iOS)</kbd>
-						<h5>公司產品, 一個社群軟體app, 訊息可提供設定未來日期時間，時間到將可開啟, 可上傳影音與照片, 是一個中大型App</h5>
+						<h5>公司產品, 一個社群軟體app, 包含一般的註冊登入, fb登入, 互加朋友功能, 訊息可提供設定未來日期時間，時間到將可開啟訊息, 可錄音錄影拍照並上傳影音與照片, 可設定google map地點位置開啟特定訊息, 是一個中大型App</h5>
 						<li><h5>後端 - 由後端人員製作，與後端串接資料使用Restful api。</h5></li>
 						<li><h5>App(iOS) - 與另一位iOS developer共同開發。</h5></li>
-						<li><h5><a href="https://www.kabsule.com/" target="_blank">官網介紹</a></h5></li>
-						<li><h5>App Store:<a href="https://itunes.apple.com/hk/app/kabsule/id1400650497?l=en&mt=8" target="_blank">網址</a></h5></li>
+						<li><h5><a href="https://www.kabsule.com/" target="_blank">更多官網介紹</a></h5></li>
+						<li><h5>Google Play: <a href="https://itunes.apple.com/hk/app/kabsule/id1400650497?l=en&mt=8" target="_blank"><img src="img/app-store.png"></a></h5></li>
 						
 	  				</blockquote>
 	        	<h3><p class="text-danger">鴻才科技股份有限公司(2014年11月~2017年03月)</p></h3>
@@ -198,7 +216,7 @@
 	  					<li><h5>後端 - 由後端人員製作，與後端串接資料使用Restful api與MQTT。</h5></li>
 	  					<li><h5>App(Android) - 開發IDE為Android Studio，使用登入、拍照、推撥、GPS定位、NFC感應、QRcode掃描、Google Map 應用，資料傳輸使用檔案格式、json格式上下傳，後續使用MVP架構部分重構。</h5></li>
 	  					<li><h5>App(iOS) - 開發IDE為Xcode，使用Swift 2.2語法開發，使用MVC架構，功能與Android相似。</h5></li>
-	  					<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=com.httc.pipeline03" target="_blank">網址</a></h5></li>
+	  					<li><h5>Google Play:<a href="https://play.google.com/store/apps/details?id=com.httc.pipeline03" target="_blank"><img src="img/google-play.png"></a></h5></li>
 	  					<li><h5>App Store:已下架</h5></li>
 	  				</blockquote>
 	  				<blockquote><kbd>盤點 App(Android)</kbd>
@@ -276,22 +294,22 @@
 	                <td><img alt="Java" src="img/java.png"></img>
 	                </td>
 	                <td>
-	                    <div class="70-score">0</div>
+	                    <div class="50-score">0</div>
 	                </td>
-	                <td>擱置一段時間了，複習中</td>
+	                <td>擱置一段時間了，偶爾看</td>
 	            </tr>
 	            <tr>
-	                <td>Php</td>
-	                <td><img alt="Php" src="img/php.png"></img>
+	                <td>React</td>
+	                <td><img alt="React" src="img/react.png"></img>
 	                </td>
 	                <td>
-	                    <div id="60-score">0</div>
+	                    <div class="40-score">0</div>
 	                </td>
-	                <td>很少用了</td>
-	            </tr>
-	            <tr>
-	                <td>Javascript</td>
-	                <td><img alt="Javascript" src="img/javascript.png"></img>
+	                <td>工作需要學習中</td>
+				</tr>
+				<tr>
+	                <td>Php</td>
+	                <td><img alt="Php" src="img/php.png"></img>
 	                </td>
 	                <td>
 	                    <div class="40-score">0</div>
@@ -311,18 +329,14 @@
         width: '300px'
     }, 2000, 'easeOutCubic');
     $('.70-score').animateNumbers(70, true, 1000);
-    $("#60-progress").animate({
-        width: '200px'
+	$(".50-progress").animate({
+        width: '100px'
     }, 2000, 'easeOutCubic');
-    $('#60-score').animateNumbers(60, true, 1000);
+    $('.50-score').animateNumbers(50, true, 1000);
     $(".40-progress").animate({
         width: '100px'
     }, 2000, 'easeOutCubic');
     $('.40-score').animateNumbers(40, true, 1000);
-    $(".20-progress").animate({
-        width: '100px'
-    }, 2000, 'easeOutCubic');
-    $('.20-score').animateNumbers(20, true, 1000);
     </script>
     <!-- 其他資訊 -->
     <div class="panel panel-primary">
@@ -335,12 +349,12 @@
 	                    <h4>大部分都用<code>MVC</code>, 近期專案改用<code>MVVM</code></h4></td>
 	            </tr>
 	            <tr>
-	                <td><strong class="text-info">常用資料庫：</strong></td>
+	                <td><strong class="text-info">用過的資料庫：</strong></td>
 	                <td>
-	                    <h4><code>MySQL</code>　<code>SQLite</code></h4></td>
+	                    <h4><code>MySQL</code>　<code>SQLite</code>　<code>Realm</code></h4></td>
 	            </tr>
 	            <tr>
-	                <td><strong class="text-info">常用傳輸資料格式：</strong></td>
+	                <td><strong class="text-info">用過的傳輸資料格式：</strong></td>
 	                <td>
 	                    <h4><code>JSON</code>　<code>XML</code></h4></td>
 	            </tr>
@@ -360,7 +374,7 @@
 	                    	</tr>
 	                    	<tr>
 	                    		<td>Web開發</td>
-	                    		<td><h4><code>Sublime</code></h4></td>
+	                    		<td><h4><code>Visual Studio Code</code></h4></td>
 	                        </tr>
 	                    </table>
 	                </td>
@@ -406,10 +420,17 @@
 	                                	<code><a href="https://cocoapods.org/" target="_blank">CocoaPods</a></code>
 	                                	<code><a href="https://github.com/Alamofire/Alamofire" target="_blank">Alamofire</a></code>
 	                                	<code><a href="https://github.com/mac-cain13/R.swift" target="_blank">R.swift</a></code>
-	                                	<code><a href="https://github.com/Haneke/HanekeSwift" target="_blank">HanekeSwift</a></code>
 	                                	<code><a href="https://github.com/onevcat/Kingfisher" target="_blank">Kingfisher</a></code>
 	                                	<code><a href="https://open.weixin.qq.com/" target="_blank">Wechat Login</a></code>
 	                    				<code><a href="https://developers.facebook.com/docs/facebook-login/ios" target="_blank">Facebook Login</a></code>
+	                                </h4>
+	                            </td>
+							</tr>
+							<tr>
+	                            <td>偵錯</td>
+	                            <td>
+	                                <h4>
+	                                	<code><a href="https://firebase.google.com/docs/crashlytics" target="_blank">Crashlytics</a></code>
 	                                </h4>
 	                            </td>
 	                    	</tr>
