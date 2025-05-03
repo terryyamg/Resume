@@ -126,49 +126,61 @@
         <div id="collapse_work_experience" class="accordion-body collapse in">
 	        <div class="jumbotron">
 	        	<div class="container">
-				<h3><p class="text-danger">(現職)鴻海科技集團-中央資訊（2021年7月~<script>
+				<h3><p class="text-danger">(現職)鴻海科技集團-工業富聯Fii（2024年12月~<script>
 						var currentTime = new Date();
 	                    var month = currentTime.getMonth() + 1;
 	                    var year = currentTime.getFullYear();
 	                    document.write(year+"年"+month+"月");
 						</script>）</p></h3>
-						<h5>轉調中央集團後,一開始支援北市府相關app(Android, iOS, Flutter),接著開發Model T LCD 內部顯示到站app, 最後開發鴻海內部相信app</h5>
-						<blockquote><kbd>Taipei Verify(Flutter)</kbd>
-							<h5>北市府相關app。</h5>
-							<li><h5>主要為接手之前人的flutter app, 用於店家掃客人的優惠券,並新增場館驗票功能,使用框架是provider。</h5></li>
-							<li><h5>App Store: <a href="https://apps.apple.com/tw/app/taipei-verify/id1585475854" target="_blank"><img src="img/app-store.png"></a></h5></li>
-							<li><h5>Google Play: <a href="https://play.google.com/store/apps/details?id=taipei.gov.notify&hl=gsw&pli=1" target="_blank"><img src="img/google-play.png"></a></h5></li>
+						<h5>轉調工業富聯後,主要負責人臉辨識app(Android),訪客管理系統app(Flutter),並串接一體機(Android)與ESD檢測靜電裝置</h5>
+						<blockquote><kbd>簽到好簡單(Android)</kbd>
+							<h5>簡介：人臉辨識app。</h5>
+							<li><h5>使用 Google ML Kit 進行人臉辨識，拍攝照片並傳送至後端進行辨識。</h5></li>
+    						<li><h5>透過 SerialPort 與一體機溝通，使用 RS232 通訊串接 ESD 檢測靜電裝置。</h5></li>
+							<li><h5>優化了頁面切換效率，滿足了顧客的需求。</h5></li>
+							<li><h5>撰寫Unit Test並使用Gitlab進行CI/CD</h5></li>
 						</blockquote>
-						<blockquote><kbd>Model T LCD(Android)</kbd>
-							<h5>鴻海電動公車內部顯示到站app。</h5>
-							<li><h5>主要開發人員,使用kotlin並使用MVVM架構,串接各家廠商車機socket(到站離站訊號)與can socket(公車左右轉訊號),並建立log上傳機制。</h5></li>
-							<li><h5>示例圖: <img src="img/lcd.png"></h5></li>
+						<blockquote><kbd>VMS(Flutter)</kbd>
+							<h5>簡介：大樓訪客登記系統</h5>
+							<li><h5>使用 Flutter 開發，主要維護既有功能，使用 Provider 框架。</h5></li>
+    						<li><h5>解決原本耗電量過高的問題，顯著降低電量消耗。</h5></li>
 						</blockquote>
-						<blockquote><kbd>相信app(Android)</kbd>
-							<h5>鴻海內部app。</h5>
-							<li><h5>維護原本功能並新增功能(FIDO驗證,黑暗模式,越南語系),並根據功能拆分SDK上傳到內部gitlab。</h5></li>
-						</blockquote>
+				<h3><p class="text-danger">鴻海科技集團-中央資訊（2021年7月~2024年12月)</p></h3>
+					<h5>轉調中央集團後,一開始支援北市府相關app(Android, iOS, Flutter),接著開發Model T LCD 內部顯示到站app, 最後開發鴻海內部相信app</h5>
+					<blockquote><kbd>Taipei Verify(Flutter)</kbd>
+						<h5>簡介：北市府相關app。</h5>
+						<li><h5>主要為接手之前人的flutter app, 用於店家掃客人的優惠券,並新增場館驗票功能,使用框架是provider。</h5></li>
+						<li><h5>App Store: <a href="https://apps.apple.com/tw/app/taipei-verify/id1585475854" target="_blank"><img src="img/app-store.png"></a></h5></li>
+						<li><h5>Google Play: <a href="https://play.google.com/store/apps/details?id=taipei.gov.notify&hl=gsw&pli=1" target="_blank"><img src="img/google-play.png"></a></h5></li>
+					</blockquote>
+					<blockquote><kbd>Model T LCD(Android)</kbd>
+						<h5>簡介：鴻海電動公車內部顯示到站app。</h5>
+						<li><h5>主要開發人員,使用kotlin並使用MVVM架構,串接各家廠商車機socket(到站離站訊號)與can socket(公車左右轉訊號),並建立log上傳機制。</h5></li>
+						<li><h5>示例圖: <img src="img/lcd.png"></h5></li>
+					</blockquote>
+					<blockquote><kbd>相信app(Android)</kbd>
+						<h5>簡介：鴻海內部員工使用的app。</h5>
+						<li><h5>維護原本功能並新增功能(FIDO驗證,黑暗模式,越南語系),並根據功能拆分SDK上傳到內部gitlab。</h5></li>
+					</blockquote>
 				<h3><p class="text-danger">鴻海科技集團-肚肚股份有限公司（2019年10月~2021年7月)</p></h3>
 					<h5>專職於開發iOS的餐飲POS系統,公司使用GitLab與Redmine,進公司後將MVC轉成MVVM架構,使用POP並遵循SOLID,部分重構使得DB與API可以方便撰寫UnitTest</h5>
 					<blockquote><kbd>肚肚dudoo POS(iOS)</kbd>
-						<h5>餐飲POS系統,給許多一般家餐飲店與王品集團使用。</h5>
+						<h5>簡介：餐飲POS系統,給許多一般家餐飲店與王品集團使用。</h5>
 							<li><h5>App(iOS) - 使用Swift 4.2語法開發,主要負責會員、點餐暫存、第三方支付串接(街口、一卡通、悠遊卡、Ocard)、禮券(王品)、部分餐點叫餐(王品)功能, 瘋美食會員串接。</h5></li>
 							<li><h5><a href="https://www.dudooeat.com/" target="_blank">官網介紹</a></h5></li>
 							<li><h5>App Store: <a href="https://apps.apple.com/tw/app/%E8%82%9A%E8%82%9A-pos/id1410534244" target="_blank"><img src="img/app-store.png"></a></h5></li>
 					</blockquote>		
 				<h3><p class="text-danger">Kooppi(香港商酷比軟體創作有限公司台灣分公司)（2017年03月~2019年9月)</p></h3>
 					<h5>在這裡,我撰寫Android與iOS App,並學習合作開發,學習使用Bitbucket + SourceTree版本控制與JIRA Software專案進度管理,並遵循zeplin設計的UI開發商用App</h5>
-					<blockquote><kbd>優惠卷 App(Android、iOS)</kbd>
-						<h5>第一個案子,利用Beacon偵測附近商家並掃描其優惠卷賺取點數,點取地圖可以觀看優惠商家。</h5>
-	  					<li><h5>後端 - 由後端人員製作,與後端串接資料使用Restful api。</h5></li>
-	  					<li><h5>App(Android) - 與另兩位Android developer合作開發,使用技術包含 Beacon應用,Firebase推撥等。</h5></li>
+					<blockquote><kbd>優惠券 App(Android、iOS)</kbd>
+						<h5>簡介：第一個案子,利用Beacon偵測附近商家並掃描其優惠券賺取點數,點取地圖可以觀看優惠商家。</h5>
+	  					<li><h5>App(Android) - 與另兩位Android developer合作開發,使用技術包含 Beacon應用,Firebase推播等。</h5></li>
 	  					<li><h5>App(iOS) - 接手外包公司開發到一半的程式,使用Swift 3語法開發,根據Android製作相同功能的app。</h5></li>
 	  					<li><h5>發案公司使用,未上架</h5></li>
 	  				</blockquote>
 	  				<blockquote><kbd>Kabsule App(iOS)</kbd>
-						<h5>公司產品, 一個社群軟體app, 包含一般的註冊登入, fb登入, 互加朋友功能, 訊息可提供設定未來日期時間,時間到將可開啟訊息, 可錄音錄影拍照並上傳影音與照片, 可設定google map地點位置開啟特定訊息, 是一個中大型App</h5>
-						<li><h5>後端 - 由後端人員製作,與後端串接資料使用Restful api。</h5></li>
-						<li><h5>App(iOS) - 與另一位iOS developer共同開發。</h5></li>
+						<h5>簡介：公司產品, 一個社群軟體app, 包含一般的註冊登入, fb登入, 互加朋友功能, 訊息可提供設定未來日期時間,時間到將可開啟訊息, 可錄音錄影拍照並上傳影音與照片, 可設定Google Maps地點位置開啟特定訊息, 是一個中大型App</h5>
+						<li><h5>App(iOS) - 與另一位iOS developer共同開發, 使用Swift語言開發並使用MVC架構。</h5></li>
 						<li><h5><a href="https://unwire.pro/2018/09/12/kabsule/news/" target="_blank">新聞介紹</a></h5></li>
 						<li><h5>App Store: 已下架</h5></li>
 						
@@ -177,18 +189,18 @@
 
 	        		<h5>在這裡,我獨立幫助公司開發5個Android App,1個iOS App,因為開發App,擴展了公司更多客戶,也成功讓App給既有或新開發的客戶使用,同一個App重複賣給不同公司,賣出的App幫助公司賺了數百萬以上。</h5>
 	        		<blockquote><kbd>巡查 App(Android、iOS)</kbd>
-	  					<h5>公司主產品,兩種類似性質的App,但專業用途不一樣,目的在於工地檢查異常紀錄,由手機端拍照並紀錄異常狀態,記錄完成後回傳至後端處理。</h5>
+	  					<h5>簡介：公司主產品,兩種類似性質的App,但專業用途不一樣,目的在於工地檢查異常紀錄,由手機端拍照並紀錄異常狀態,記錄完成後回傳至後端處理。</h5>
 	  					<li><h5>後端 - 由後端人員製作,與後端串接資料使用Restful api與MQTT。</h5></li>
-	  					<li><h5>App(Android) - 開發IDE為Android Studio,使用登入、拍照、推撥、GPS定位、NFC感應、QRcode掃描、Google Map 應用,資料傳輸使用檔案格式、json格式上下傳,後續使用MVP架構部分重構。</h5></li>
+	  					<li><h5>App(Android) - 開發IDE為Android Studio,使用登入、拍照、推播、GPS定位、NFC感應、QRcode掃描、Google Maps 應用,資料傳輸使用檔案格式、json格式上下傳,後續使用MVP架構部分重構。</h5></li>
 	  					<li><h5>App(iOS) - 開發IDE為Xcode,使用Swift 2.2語法開發,使用MVC架構,功能與Android相似。</h5></li>
 	  				</blockquote>
 	  				<blockquote><kbd>盤點 App(Android)</kbd>
-	  					<h5>當倉庫物品不見時,藉由盤點可以找出物品不見的原因,使用感應裝置（NFC,QRcode）感應物品,可進行借出、收回與盤點功能,紀錄並計算數量,完成後,回傳至後端資料庫。</h5>
+	  					<h5>簡介：當倉庫物品不見時,藉由盤點可以找出物品不見的原因,使用感應裝置（NFC,QRcode）感應物品,可進行借出、收回與盤點功能,紀錄並計算數量,完成後,回傳至後端資料庫。</h5>
 	  					<li><h5>後端 - 由主管帶領從需求分析到後端資料庫與網頁製作,使用MYSQL做為後端資料庫,UI使用<code><a href="http://dhtmlx.com/" target="_blank">dhtmlx</a></code>,搭配PHP與Javascript製作。</h5></li>
 	  					<li><h5>App - 開發IDE為Eclipse,使用GPS定位、NFC感應、QRcode掃描,資料傳輸使用json格式上下傳。</h5></li>
 	  				</blockquote>
 	  				<blockquote><kbd>巡堂點名 App(Android)</kbd>
-	  					<h5>開發給學校使用,藉由巡堂人紀錄上課狀態,並回傳不守校規的學生與老師名單,由手機端拍照並記錄違規名單,上傳資料時寄出email通知違規人員。</h5>
+	  					<h5>簡介：開發給學校使用,藉由巡堂人紀錄上課狀態,並回傳不守校規的學生與老師名單,由手機端拍照並記錄違規名單,上傳資料時寄出email通知違規人員。</h5>
 	  					<li><h5>後端 - 自己分析需求並製作,藉由前面學到的方式實行之。</h5></li>
 	  					<li><h5>App - 開發IDE為Eclipse,使用到登入、拍照、自動寄信功能,資料傳輸使用json格式上下傳。</h5></li>
 	  					<li><h5>Google Play:已下架</h5></li>
@@ -205,11 +217,11 @@
 						<h5>使用PHP、MYSQL、Javascript與JQuery依客戶需求修改並維護系統。</h5>
 					</blockquote>
 	  				<blockquote><kbd>開發Android App</kbd>
-	  					<h5>此為第一次正式開發Android App,使用Eclipse開發,應用到的功能為google map、GPS定位、距離偵測、推播訊息、自動更新、自動發信、搜尋功能、前導說明頁、分享功能等等的商業功能,並使用Parse  API為app後台,進行各種資料存取,此App主要功能為:</h5>
+	  					<h5>簡介：此為第一次正式開發Android App,使用Eclipse開發,應用到的功能為Google Maps、GPS定位、距離偵測、推播訊息、自動更新、自動發信、搜尋功能、前導說明頁、分享功能等等的商業功能,並使用Parse  API為app後台,進行各種資料存取,此App主要功能為:</h5>
 	  					<ol>
-	  					<li><h5>定點推撥功能:使用者在距離某店家定點範圍內時,跳出推播訊息。</h5></li>
-	  					<li><h5>QRcode掃瞄功能:使用者使用QRcode掃描店家QRcode可享優惠,並記錄在雲端網頁上。</h5></li>
-	  					<li><h5>購買功能:當使用者購買商品後,會自動推撥與發信給店家。</h5></li>
+	  					<li><h5>定點推播功能:使用者在距離某店家定點範圍內時,跳出推播訊息。</h5></li>
+	  					<li><h5>QRcode掃描功能:使用者使用QRcode掃描店家QRcode可享優惠,並記錄在雲端網頁上。</h5></li>
+	  					<li><h5>購買功能:當使用者購買商品後,會自動推播與發信給店家。</h5></li>
 	  					<li><h5>店家後台功能:店家登入後可看QRcode掃描次數與商品賣出通知。</h5></li>
 	  					</ol>
 	  					<h5>在計畫終止後,決定繼續尋找開發Android App的公司繼續深入開發。</h5>
@@ -252,7 +264,7 @@
 				<blockquote><kbd>覺醒圖(Android)【2019年】(iOS)【2021年】</kbd>
 				<h5>白貓app遊戲抽角抽不到,但也想看角色圖,又懶得去找網站,於是寫了一個爬蟲抓取資料與圖片方片查找的app</h5>
 				<li><h5>使用MVC架構,初次使用Kotlin語法開發</h5></li>
-				<li><h5>使用Realm做db, JSOUP爬蟲, Firebase Crashlytics來除錯。</h5></li>
+				<li><h5>使用Realm做db, Jsoup爬蟲, Firebase Crashlytics來除錯。</h5></li>
 				<li><h5>2021開始翻譯Android專案到iOS, iOS使用MVVMC架構搭配RxSwift。</h5></li>
 				<li><h5>下載人數1萬+</h5></li>
 				<li><h5>Google Play: <a href="https://play.google.com/store/apps/details?id=com.terryyamg.whitecatshowimage" target="_blank"><img src="img/google-play.png"></a></h5></li>
@@ -415,7 +427,7 @@
 	                            </td>
 	                        </tr>
 	                        <tr>
-	                            <td>推撥</td>
+	                            <td>推播</td>
 	                            <td>
 	                                <h4>
 	                                	<code><a href="https://firebase.google.com/docs/cloud-messaging/" target="_blank">FCM</a></code>
@@ -501,7 +513,7 @@
 	                </td>
 	            </tr>
 	            <!-- <td><strong class="text-info">常用功能：</strong></td>
-	            <td><h4><code>Google Map</code>　<code>GPS距離計算</code>　<code>NFC感應</code>　<code>QRcode掃描</code></h4>　<h4><code>Restful api資料對接</code>　<code>拍照</code> <code>推撥處理</code>　<code>等...(請參閱<a href="http://terryyamg.blogspot.tw/" target="_blank">http://terryyamg.blogspot.tw/</a>)</code>　</h4></td> -->
+	            <td><h4><code>Google Map</code>　<code>GPS距離計算</code>　<code>NFC感應</code>　<code>QRcode掃描</code></h4>　<h4><code>Restful api資料對接</code>　<code>拍照</code> <code>推播處理</code>　<code>等...(請參閱<a href="http://terryyamg.blogspot.tw/" target="_blank">http://terryyamg.blogspot.tw/</a>)</code>　</h4></td> -->
 	            </tr>
 	        </table>
 	   	</div>
